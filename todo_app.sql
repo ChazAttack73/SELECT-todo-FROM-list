@@ -8,5 +8,5 @@ CREATE DATABASE todo_app;
 
 \c todo_app;
 
-CREATE TABLE "users"
-("id" serial NOT NULL, "name" varying character(45) NOT NULL)
+CREATE TABLE "tasks"
+("id" serial NOT NULL, PRIMARY KEY("id"));
