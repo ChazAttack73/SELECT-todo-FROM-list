@@ -1,5 +1,7 @@
 DROP USER IF EXISTS michael;
 
+CREATE USER micahel WITH ENCRYPTED PASSWORD 'stonebreaker';
+
 CREATE DATABASE todo_app;
 \c todo_app;
 
