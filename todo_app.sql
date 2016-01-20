@@ -19,7 +19,10 @@ CREATE TABLE "tasks" ("id" serial NOT NULL,
 
 ALTER TABLE tasks DROP COLUMN completed;
 
-ALTER TABLE tasks ADD COLUMN "completed_at:" timestamp DEFAULT NULL;
+ALTER TABLE tasks ADD COLUMN "completed_at" timestamp DEFAULT NULL;
+
+ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL;
+ALTER TABLE tasks ALTER COLUMN updated_at SET DEFAULT now();
 
 \dt
 
