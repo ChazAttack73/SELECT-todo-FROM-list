@@ -24,7 +24,7 @@ ALTER TABLE tasks ADD COLUMN "completed_at" timestamp DEFAULT NULL;
 ALTER TABLE tasks ALTER COLUMN updated_at SET NOT NULL;
 ALTER TABLE tasks ALTER COLUMN updated_at SET DEFAULT now();
 
-\dt
+INSERT INTO tasks VALUES (default, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 
 \d tasks;
 
