@@ -10,3 +10,5 @@ CREATE DATABASE todo_app;
 
 CREATE TABLE "tasks"
 ("id" serial NOT NULL, PRIMARY KEY("id"));
+
+ALTER TABLE tasks DROP COLUMN completed;
