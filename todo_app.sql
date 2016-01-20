@@ -26,6 +26,6 @@ ALTER TABLE tasks ALTER COLUMN updated_at SET DEFAULT now();
 
 INSERT INTO tasks VALUES (default, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 
-\d tasks;
+INSERT INTO tasks (title, description) VALUES ('Study PostgreSQL', 'Read all the documentation');
 
-SELECT * FROM tasks;
+SELECT * FROM tasks
