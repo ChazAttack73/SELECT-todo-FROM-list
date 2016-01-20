@@ -8,7 +8,10 @@ CREATE DATABASE todo_app;
 
 \c todo_app;
 
-CREATE TABLE "tasks"
-("id" serial NOT NULL, PRIMARY KEY("id"));
+CREATE TABLE "tasks" ("id" serial NOT NULL, PRIMARY KEY("id"));
 
 ALTER TABLE tasks DROP COLUMN completed;
+
+ALTER TABLE tasks ADD COLUMN "completed_at:" timestamp DEFAULT NULL;
+
+SELECT * FROM tasks;
